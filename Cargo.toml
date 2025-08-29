@@ -1,0 +1,19 @@
+[package]
+name = "boost_yap"
+description = "Boost C++ library boost_yap packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_yap"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_yap"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_hana = { version = "0.1.0", path = "../boost_hana" }
+boost_preprocessor = { version = "0.1.0", path = "../boost_preprocessor" }
+boost_type_index = { version = "0.1.0", path = "../boost_type_index" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
